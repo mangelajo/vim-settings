@@ -20,10 +20,11 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'hynek/vim-python-pep8-indent'
+
 " Control + n to NERDTree file browser
 Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
@@ -32,10 +33,14 @@ map <C-n> :NERDTreeToggle<CR>
 Plugin 'vim-scripts/taglist.vim'
 map <C-b> :TlistToggle<CR>
 
+" vim-airline
 Plugin 'bling/vim-airline'
 set laststatus=2
 
-Plugin 'ervandew/supertab'
+" This one is cool, but removed by default as it requires cmake gcc, gcc-c++,
+" etc...
+"
+" Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
