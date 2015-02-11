@@ -17,12 +17,25 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 Plugin 'hynek/vim-python-pep8-indent'
+" Control + n to NERDTree file browser
+Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+
+" Control + b to vim taglist browser
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'L9'
+map <C-b> :TlistToggle<CR>
+
+Plugin 'bling/vim-airline'
+set laststatus=2
+
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,12 +53,8 @@ filetype plugin indent on    " iequired
 "  see :h vundle for more details or wiki for FAQ
 "  Put your non-Plugin stuff after this line
 
-" Control + n to NERDTree file browser
-map <C-n> :NERDTreeToggle<CR>
-
-" Control + b to vim taglist browser
-map <C-b> :TlistToggle<CR>
 
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+
