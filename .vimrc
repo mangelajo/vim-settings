@@ -24,6 +24,7 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'nvie/vim-flake8'
 
 " Control + n to NERDTree file browser
 Plugin 'scrooloose/nerdtree'
@@ -36,7 +37,6 @@ map <C-b> :TlistToggle<CR>
 " vim-airline
 Plugin 'bling/vim-airline'
 set laststatus=2
-
 " This one is cool, but removed by default as it requires cmake gcc, gcc-c++,
 " etc...
 "
