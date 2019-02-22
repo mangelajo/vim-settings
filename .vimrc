@@ -1,7 +1,7 @@
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set textwidth=80
+set textwidth=800
 set smarttab
 
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'nvie/vim-flake8'
+Plugin 'pearofducks/ansible-vim'
 
 " Control + n to NERDTree file browser
 Plugin 'scrooloose/nerdtree'
